@@ -45,7 +45,7 @@ func corpus(dir string, f *testing.F) {
 
 }
 
-func FuzzDES(f *testing.F) {
+func FuzzTLS(f *testing.F) {
 	corpus("./corpus", f)
 
 	f.Fuzz(func(t *testing.T, payload []byte) {
